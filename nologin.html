@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <style>
+                    /* Style the body */
+                    body {
+                      font-family: Arial;
+                      text-align: center;
+                      margin: 0;
+                      background-color: #282c34;
+                        min-height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: calc(10px + 2vmin);
+                        color: white;
+                    }
+                    a{color: rgb(193, 112, 240);
+
+                    }
+                    /* Header/Logo Title */
+                    .head {
+                        background-color: #282c34;
+                        min-height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: calc(10px + 2vmin);
+                        color: white;
+                    }
+                    
+                    /* Page Content */
+                    .content {padding:20px;}
+                    </style>
+    </head>
+   
+  <body>
+    <div id="root"></div>
+    <div>
+    
+
+            <h1>El usuario no esta registrado en el xml de usuarios</h1>
+            <a target="_blank"  onclick="myFunction()">presione aqui para regresar a intentarlo</a>
+            <script>
+              function myFunction() {
+                location.replace("http://localhost:3000/index.html")
+              }
+              </script>
+        
+     </div>
+  </body>
+</html>

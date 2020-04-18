@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<style>
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+    .upper-button {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .bottom-button {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    .black-pick:hover {
+      background-color: #000;
+      border-color: rgb(116, 114, 114);
+    }
+    .black-pick {
+      background-color: #4e4e4e2a;
+      border-color: #ffffff;
+    }
+
+    .green-pick:hover {
+      background-color: rgba(4, 104, 9, 0.582);
+      border-color: rgb(116, 114, 114);
+    }
+    .green-pick {
+      background-color: #2df10671;
+      border-color: #ffffff;
+    }
+
+    .blue-pick:hover {
+      background-color: rgba(2, 3, 59, 0.582);
+      border-color: rgb(116, 114, 114);
+    }
+    .blue-pick {
+      background-color: #6c6ae273;
+      border-color: #ffffff;
+    }
+    .yellow-pick:hover {
+      background-color: rgb(238, 255, 2);
+      border-color: rgb(116, 114, 114);
+    }
+    .yellow-pick {
+      background-color: #d9ff00e5;
+      border-color: #ffffff;
+    }
+    .red-pick:hover {
+      background-color: rgb(255, 0, 0);
+      border-color: rgb(255, 255, 255);
+    }
+    .red-pick {
+      background-color: #ff0000bb;
+      border-color: #000000;
+    }
+    </style>
+</head>
+<body> 
+   
+    <a onclick="TogetherJS(this); return false;"><img src="https://togetherjs.com/images/start-togetherjs-blue.png" style="width: 135px" /></a>
+    
+    <div class="btn-group btn-group-justified" style="margin-right: auto; margin-top: 10px; width: 70%;"> 
+      <a class="btn btn-info color-picker blue-pick upper-button">Blue</a>          
+      <a class="btn btn-success color-picker green-pick upper-button">Green</a>
+      <a class="btn btn-warning color-picker yellow-pick upper-button">Yellow</a>
+      <a class="btn btn-danger color-picker red-pick upper-button">Red</a>
+      <a class="btn btn-success color-picker black-pick upper-button" style="border-bottom-width: px;">Black</a>
+    </div>
+    <div class="clearfix"></div>
+    <div id="sketchContainer" style="width: 70%; height: 300px; border: 1px solid rgba(0,0,0,0.2)"><canvas id="sketch"></canvas></div>
+    <div class="btn-group btn-group-justified" style="margin-right: auto; width: 70%;"> 
+      <a class="btn btn-info user-color-pick bottom-button" style="width: 30%;">User Color</a>
+      <a class="btn btn-success plus-size" style="width: 15%;">
+        <i class="fa fa-plus-square"></i>
+      </a>
+      <a class="btn btn-warning clear" style="width: 15%;">
+        <i class="fa fa-times-circle"></i>
+      </a>
+      <a class="btn btn-danger minus-size" style="width: 15%;">
+        <i class="fa fa-minus-square"></i>
+      </a>
+      <a class="btn btn-default eraser bottom-button" style="width: 35%; border-top-width: 0px;">
+        <i class="fa fa-eraser"></i>
+      </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+    <script src="javascripttpgether.js"></script>
+</body>
+</html>
